@@ -30,15 +30,17 @@ section {
 
 }
 
-img {
+img, .opac, .block {
     display: block;
     box-sizing: border-box;
+    border: solid 3px white;
     width: 100%
 }
 
+
 .block {
     margin-top: -573px;
-    border: solid 3px white;
+
 }
 
 ul {
@@ -121,10 +123,10 @@ li:not(:hover) {
     opacity: 0.6
 }
 
-section:hover img {
+section:hover .opac {
     opacity: 0
 }
 
-div
+
 
 
