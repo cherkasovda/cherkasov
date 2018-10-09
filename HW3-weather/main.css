@@ -5,24 +5,47 @@ body {
     color: white;
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
 }
-*{transition: all .1s ease-in;}
+
+* {
+    transition: all .1s ease-in;
+}
+
 h1 {
     margin: 20px 200px auto;
 }
-span { margin: 20px 200px auto;}
-i {font-size: 30px}
+
+span {
+    margin: 20px 200px auto;
+}
+
+i {
+    font-size: 30px
+}
+
 section {
     display: block;
     margin: 20px 200px auto;
     width: calc(90% - 300px);
     box-sizing: border-box;
-    border: solid 3px white
+
+}
+
+img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%
+}
+
+.block {
+    margin-top: -573px;
+    border: solid 3px white;
 }
 
 ul {
     font-size: 0;
     margin: 0;
     padding: 0;
+
 }
 
 li {
@@ -34,62 +57,74 @@ li {
     box-sizing: border-box;
     height: 25%;
 }
-p {opacity: 0.8  ;
-    display: inline-block;}
-section:hover {opacity: 0.7}
+
+p {
+    opacity: 0.8;
+    display: inline-block;
+}
+
 li:nth-child(1) {
     width: 50%;
 }
-li:nth-child(1):hover {
-    opacity: 1;
-}
+
 li:nth-child(9) {
     width: 50%;
     background-color: #CC6699;
 }
 
-/*li:nth-child(1) ~ li {width: 25%}*/
 li:nth-child(2) {
     width: 25%;
     background-color: #33CCCC
 }
 
-li:nth-child(3){
+li:nth-child(3) {
     width: 25%;
     background-color: #996699
 }
-li:nth-child(4){
+
+li:nth-child(4) {
     width: 25%;
     background-color: #C24747
 }
-li:nth-child(5){
+
+li:nth-child(5) {
     width: 25%;
     background-color: #E2674A
 }
-li:nth-child(6){
+
+li:nth-child(6) {
     width: 25%;
     background-color: #FFCC66
 }
+
 li:nth-child(7) {
     width: 25%;
     background-color: #99CC99
 }
-li:nth-child(8){
+
+li:nth-child(8) {
     width: 25%;
     background-color: #669999
 }
+
 li:nth-child(10) {
     width: 25%;
     background-color: #339966
 }
 
 li:nth-last-child(1) {
-    width: 100%; background-color: #666699
-}
-div:hover {
-    background-color: rgba(255,255,255,0.65);
+    width: 100%;
+    background-color: #666699
 }
 
-li:hover {opacity: 1  ;
-    background-color: #3399CC}
+li:not(:hover) {
+    opacity: 0.6
+}
+
+section:hover img {
+    opacity: 0
+}
+
+
+
 
