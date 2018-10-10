@@ -27,22 +27,25 @@ section {
     margin: 20px 200px auto;
     width: calc(90% - 300px);
     box-sizing: border-box;
-    background-color: #fff;
+
 
 }
+.block {
 
-img, .opac, .block {
-    display: block;
     box-sizing: border-box;
     border: solid 3px white;
-    width: 100%
+    width: 100%;
+    background: #fff;
+
 }
 
+/*
 
 .block {
     margin-top: -573px;
+*/
 
-}
+/*}*/
 
 ul {
     font-size: 0;
@@ -120,13 +123,19 @@ li:nth-last-child(1) {
     background-color: #666699
 }
 
+/*
 li:not(:hover) {
     opacity: 0.6
 }
 section:hover .opac {
     opacity: 0
 }
+*/
 
-
-
+#wth:hover li {
+    opacity: 0.5;
+}
+#wth li:hover {
+    opacity: 1;
+}
 
