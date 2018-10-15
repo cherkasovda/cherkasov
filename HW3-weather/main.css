@@ -59,7 +59,7 @@ li {
     text-align: center;
     display: inline-block;
     font-size: 25px;
-    border: solid 3px white;
+    /*border: solid 3px white;*/
     box-sizing: border-box;
     height: 25%;
 }
