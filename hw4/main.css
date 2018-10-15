@@ -1,0 +1,224 @@
+
+section {
+    position: relative;
+    width: 30vw;
+    height: 30vw;
+    margin: 100px auto;
+    font-size: 0;
+    padding-left: 0;
+    border: solid 5px black
+}
+
+ul {
+
+    width: 30vw;
+    height: 30vw;
+    font-size: 0;
+    padding-left: 0;;
+}
+
+li {
+    display: inline-block;
+    width: 12.5%;
+    height: 12.5%;
+    box-sizing: border-box;
+    background: #acac74;
+}
+
+#des li:nth-child(odd) {
+    background: #000;
+}
+
+#des li:nth-child(10), #des li:nth-child(9n+10) {
+    position: absolute;
+    left: 0;
+}
+
+
+#cirred li {
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+margin: 1%;
+       box-sizing: border-box;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmMzAxOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZjA0MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+    border-radius: 50%;
+}
+
+#cirred li:nth-child(1) {
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+#cirred li:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    z-index: 1
+}
+
+#cirred li:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1
+}
+
+#cirred li:nth-child(4) {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    z-index: 1
+}
+
+#cirred li:nth-child(5) {
+    position: absolute;
+    top: 12.5%;
+    left: 12.5%;
+    z-index: 1
+}
+
+#cirred li:nth-child(6) {
+    position: absolute;
+    top: 12.5%;
+    left: 37.5%;
+    z-index: 1
+}
+
+#cirred li:nth-child(7) {
+    position: absolute;
+    top: 12.5%;
+    left: 62.5%;
+    z-index: 1
+}
+
+#cirred li:nth-child(8) {
+    position: absolute;
+    top: 12.5%;
+    left: 87.5%;
+    z-index: 1
+}
+
+#cirred li:nth-child(9) {
+    position: absolute;
+    top: 25%;
+
+    z-index: 1
+}
+
+#cirred li:nth-child(10) {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: 1
+}
+
+#cirred li:nth-child(11) {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: 1
+}
+
+#cirred li:nth-child(12) {
+    position: absolute;
+    top: 25%;
+    left: 75%;
+    z-index: 1;
+}
+
+#cirbl li {
+    display: inline-block;
+    width: 12.5%;
+    height: 12.5%;
+
+    box-sizing: border-box;
+    background: #451c00;
+    border-radius: 50%;
+}
+
+#cirbl li:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1
+}
+
+#cirbl li:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 12.5%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 37.5%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 62.5%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(5) {
+    position: absolute;
+    bottom: 12.5%;
+    left: 0;
+    z-index: 1
+}
+
+#cirbl li:nth-child(6) {
+    position: absolute;
+    bottom: 12.5%;
+    left: 25%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(7) {
+    position: absolute;
+    bottom: 12.5%;
+    left: 50%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(8) {
+    position: absolute;
+    bottom: 12.5%;
+    left: 75%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(9) {
+    position: absolute;
+    bottom: 25%;
+    left: 12.5%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(10) {
+    position: absolute;
+    bottom: 25%;
+    left: 37.5%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(11) {
+    position: absolute;
+    bottom: 25%;
+    left: 62.5%;
+    z-index: 1
+}
+
+#cirbl li:nth-child(12) {
+    position: absolute;
+    bottom: 25%;
+    left: 87.5%;
+    z-index: 1
+}

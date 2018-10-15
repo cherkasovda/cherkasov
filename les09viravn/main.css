@@ -1,0 +1,33 @@
+div {
+    width: 100px;
+    height:100px;
+    margin: 30px;
+    background: #76496c;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/*img {vertical-align: middle}*/
+section {
+    vertical-align: middle;}
+span {
+    display: inline-block;
+    width: 50%  }
+a {
+    margin: 10px;
+    display: inline-block;
+}
+.btn {
+    height: 70px;
+    display: inline-block;
+border: solid 1px #33CCCC;
+border-radius: 5px;
+    text-decoration: none;
+color: #7d8577;
+    font-size: 16px;
+    padding: 0 10px;
+    background: #d1c80f;
+    line-height: 70px;
+font-family: Arial, sans-serif;
+box-sizing: border-box}
