@@ -1,0 +1,86 @@
+#socials li {
+    display: inline-block;
+}
+
+#socials a {
+    display: block;
+    width: 50px;
+    height: 56px;
+    background: url(img/social.png) no-repeat;
+    margin-right: 40px;
+}
+
+#socials li:last-child a {
+    margin-right: 0
+}
+
+
+#socials .inst {
+    background-position: -90px 0;
+
+}
+
+#socials .ball {
+    background-position: -180px 0;
+}
+
+#socials .be {
+    background-position: -267px 0;
+
+}
+body {
+    margin: 0;}
+main    {
+    width: 100%;
+    height: 650px;
+    display: block;
+    background: url("img/Hero.jpeg");
+    background-position: center;
+}
+section {
+    display: block;
+    width: 1140px;
+    height: 650px;
+    margin: 0 auto;
+}
+#head {
+    display: inline-block;
+    width: 100%;}
+li {margin-top: 50px;
+    float: right;
+    display: inline-block; margin-left: 50px}
+a  {color: white;
+text-decoration: none}
+
+#head .logo {
+    float: left;
+    width:174px;
+    height:99px;
+    margin-top: 36px;
+    background: url("img/foliac-logo.png") no-repeat;}
+
+h1 {color: white;
+    font-size:46px;
+    font-style: Myriad Pro Regular ;
+    text-align: center;
+    margin-top: 80px;
+}
+h2  {color: white;
+    font-size:30px;
+    font-style: Myriad Pro Regular ;
+    text-align: center;}
+
+#but {border: solid 2px #48bf72;
+
+    display: inline-block;
+    text-align: center;
+    width: 138px;
+    height: 39px;
+    margin:50px 0 0 500px;
+
+}
+#but p { color: #48bf72;
+    font-size: 14px;
+text-align: center;
+    text-transform: uppercase;
+}

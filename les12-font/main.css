@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:700,800i|IBM+Plex+Serif:400i,500,600&subset=cyrillic');
+@font-face {
+    font-family: 'debbyscript';
+    src: url('fonts/12446-webfont.woff2') format('woff2'),
+    url('fonts/12446-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+p:first-child {
+    font-family: monospace;
+  /*  text-transform: uppercase; буквы заглавные
+    text-transform: lowercase;     буквы маленькие*/
+    /*text-transform: capitalize; первые буквы заглавные*/
+/*font-variant: all-petite-caps; маленькие буквы в верхнем регистре*/
+    text-decoration: underline overline line-through;
+    line-height: 2;
+    letter-spacing: 1.2px;
+    word-spacing: 5px;
+}
+p:nth-child(2) {
+    font-family: Georgia, 'Times New Roman',  serif;
+}
+p:nth-child(3) {
+    /*font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;*/
+    font: bold 20px/1.5 Verdana, Arial, sans-serif;
+}
+p:nth-child(4) {
+    font-family: 'Alegreya SC', serif;
+    font-weight: 800;
+    font-style: italic;
+}
+p:nth-child(5)  {
+    font-family: 'IBM Plex Serif', serif;
+    font-style: italic;
+}p:nth-child(6) {
+     font-family: debbyscript, sans-serif;
+ }
+ div {
+     width: 200px;
+     background: #acac74;
+     padding: 10px;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+ div:hover {white-space: normal;
+ margin-bottom: calc(38px - 74px);
+ position: relative;
+ cursor: pointer}
+
+ p:first-letter {
+     font-size:30px;
+ color: #000099}
