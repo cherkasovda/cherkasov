@@ -45,6 +45,7 @@ body {
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'ralewaysemibold_italic';
     src: url('fonts/raleway_semibolditalic_webfont.woff2') format('woff2'),
@@ -53,6 +54,7 @@ body {
     font-style: normal;
 
 }
+
 a {
     color: #303030;
     text-decoration: none;
@@ -92,8 +94,8 @@ header {
     margin-top: 0;
     width: 100%;
     height: 820px;
-    background: url(img/Slider.png) no-repeat;
-    background-position: 345px 0;
+    background: url(img/Slider.png) no-repeat 345px 0;
+    /*background-position:;*/
 }
 
 #txt {
@@ -104,7 +106,7 @@ header {
     font-size: 24px
 }
 
-#txt #h {
+#h {
     font-size: 150px;
     font-family: ralewayblack, sans-serif;
     font-weight: bold;
@@ -154,7 +156,6 @@ b:before {
 }
 
 #nav a:hover {
-
     color: red;
     cursor: pointer;
 }
@@ -167,7 +168,7 @@ main {
     background: #ffffff;
     width: 1200px;
     margin: 0 auto;
-    height: 1193px;
+    min-height: 1193px;
 }
 
 h1 {
@@ -245,18 +246,22 @@ div input {
     width: 208px;
     height: 70px;
     border-radius: 0 30px 30px 0;
-    border-color: #e10011 ;
+    border-color: #e10011;
     color: white;
     font-size: 18px;
     font-family: robotobold, sans-serif;
 }
-form:after {content: '';
+
+form:after {
+    content: '';
     display: block;
-clear: both
+    clear: both
 }
+
 #socials {
-    margin:125px 0 25px 430px;
+    margin: 125px 0 25px 430px;
 }
+
 #socials li {
     display: inline-block;
 }
@@ -273,7 +278,6 @@ clear: both
     margin-right: 0
 }
 
-
 #socials .twit {
     background-position: -90px 0;
 
@@ -287,8 +291,16 @@ clear: both
     background-position: -267px 0;
 
 }
-.row3 {position: relative}
-#one {position: absolute;
-top: 0}
-.row3 .col:first-child:hover #one{
-    display: none;}
+
+.row3 {
+    position: relative
+}
+
+#one {
+    position: absolute;
+    top: 0
+}
+
+.row3 .col:first-child:hover #one {
+    display: none;
+}
