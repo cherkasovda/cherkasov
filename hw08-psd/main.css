@@ -36,10 +36,19 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'ralewayregular';
     src: url('fonts/raleway_regular_webfont.woff2') format('woff2'),
     url('fonts/raleway_regular_webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaysemibold_italic';
+    src: url('fonts/raleway_semibolditalic_webfont.woff2') format('woff2'),
+    url('fonts/raleway_semibolditalic_webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -51,7 +60,6 @@ a {
 
 header {
     width: 1200px;
-    height: 64vw;
     margin: 0 auto
 }
 
@@ -104,7 +112,6 @@ header {
     margin-top: 88px;
     margin-bottom: 0;
     text-transform: uppercase;
-    letter-spacing: 1.4px
 }
 
 #txt p {
@@ -145,13 +152,17 @@ b:before {
     background: red;
     cursor: pointer;
 }
-#nav a:hover{
+
+#nav a:hover {
 
     color: red;
     cursor: pointer;
 }
+
 #txt a:hover {
-    color: #acab8a;}
+    color: #acab8a;
+}
+
 main {
     background: #ffffff;
     width: 1200px;
@@ -164,39 +175,120 @@ h1 {
     font-size: 48px;
     padding-top: 50px;
     margin-bottom: 10px;
-    font-family: ralewayblack;
+    font-family: ralewayblack, sans-serif;
 }
 
 #zvezda {
     margin: 0 495px;
 }
 
-main p {
+main p, footer p {
     display: block;
     width: 45%;
     font-size: 18px;
-    font-family: ralewayregular;
+    font-family: ralewayregular, sans-serif;
     margin: 10px auto;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
+
 .row3, .row2 {
     width: 1056px;
     height: 387px;
-margin: 31px auto}
+    margin: 31px auto
+}
 
-.row2 .col {width: 328px;
+.row2 .col {
+    width: 328px;
     display: inline-block;
-    height:100%;
-    margin-left: 65px;}
+    height: 100%;
+    margin-left: 65px;
+}
+
 .row2 .col2 {
     width: 656px;
     height: 100%;
     display: inline-block;
-margin-left: 0}
-.row3 .col {width: 328px;
+    margin-left: 0
+}
+
+.row3 .col {
+    width: 328px;
     display: inline-block;
-    height:100%;
-    margin-right: 31px;}
+    height: 100%;
+    margin-right: 31px;
+}
+
 .row3 .col:last-child {
-    margin: 0;}
+    margin: 0;
+}
+
+form div {
+    display: block;
+
+}
+
+div input {
+    height: 63px;
+    width: 486px;
+    float: left;
+    margin-left: 330px;
+    border-radius: 30px 0 0 30px;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: ralewaysemibold_italic, sans-serif;
+}
+
+#butt {
+    margin: 0;
+    background: #e10011;
+    width: 208px;
+    height: 70px;
+    border-radius: 0 30px 30px 0;
+    border-color: #e10011 ;
+    color: white;
+    font-size: 18px;
+    font-family: robotobold, sans-serif;
+}
+form:after {content: '';
+    display: block;
+clear: both
+}
+#socials {
+    margin:125px 0 25px 430px;
+}
+#socials li {
+    display: inline-block;
+}
+
+#socials a {
+    display: block;
+    width: 72px;
+    height: 72px;
+    background: url(img/social.png) no-repeat;
+    margin-right: 20px;
+}
+
+#socials li:last-child a {
+    margin-right: 0
+}
+
+
+#socials .twit {
+    background-position: -90px 0;
+
+}
+
+#socials .yout {
+    background-position: -180px 0;
+}
+
+#socials .me {
+    background-position: -267px 0;
+
+}
+.row3 {position: relative}
+#one {position: absolute;
+top: 0}
+.row3 .col:first-child:hover #one{
+    display: none;}
