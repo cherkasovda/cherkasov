@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<form action="/" method="post">
+    <div>
+        <label for="text-input">Ваше имя:</label>
+        <input type="text" id="text-input" name="first-name" value="Вася" readonly>
+        <label for="text-input">Ваше имя:</label>
+    </div>
+    <div>
+        <label>
+            Ваша фамилия:
+            <input type="text" name="second-name" maxlength="30" minlength="2" required="required">
+        </label>
+    </div>
+    <div>
+        <label>
+
+            <input type="date" name="date">
+            Дата рождения:
+        </label>
+    </div>
+    <div>
+        <label>
+            Возраст
+            <input type="number" name="age" size="2" placeholder="введите дату">
+
+        </label>
+    </div>
+    <div>
+        <label>
+            email
+            <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+        </label>
+    </div>
+    <div>
+        <label>
+            Номер телефона
+            <input type="tel" name="phone">
+
+        </label>
+    </div>
+    <div>
+        <label>
+            Пароль
+            <input type="password" name="pas">
+
+        </label>
+    </div>
+    <div>
+        <label>
+            Фото
+            <input type="file" name="photo">
+
+        </label>
+    </div>
+    <div>
+        <input type="submit" value="Зарегистрировать">
+        <button type="reset">сброс</button>
+    </div>
+    <div>
+        <label>
+            djsnfjn
+            <input type="checkbox" name="photo" checked disabled>
+        </label>
+    </div>
+    <div><p>желаемая зп</p>
+        <!--label>input:radio-->
+        <label>500$
+            <input type="radio" value="500" name="sallery">
+        </label>
+        <label>
+            1000$
+            <input type="radio" value="1000" name="sallery">
+        </label>
+        <label>
+            5000$
+            <input type="radio" value="5000" name="sallery">
+        </label>
+    </div>
+    <div>
+        <label>
+            кратко о себе
+            <textarea name="about" cols="30" rows="10"></textarea>
+        </label>
+    </div>
+    <div>
+        <label>
+            откуда вы
+            <select name="from">
+                <option value="0">Другой город</option>
+                <option value="2" selected>крама</option>
+                <option value="3">слав</option>
+                <option value="kr-r">кривой рог</option>
+            </select>
+        </label>
+    </div>
+    <label>
+        Другой город
+        <input type="text" name="city">
+    </label>
+    <div class="style_radio">
+        <p>желаемая зп</p>
+        <!--label>input:radio-->
+
+        <input type="radio" value="500" name="bonus" id="b-500">
+        <label for="b-500">500$</label>
+        <input type="radio" value="1000" name="bonus" id="b-1000">
+        <label for="b-1000">   1000$        </label>
+        <input type="radio" value="5000" name="bonus" id="b-5000" disabled checked>
+        <label for="b-5000"> 5000$       </label>
+    </div>
+</form>
+
+</body>
+</html>

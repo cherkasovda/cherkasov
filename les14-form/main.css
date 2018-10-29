@@ -1,0 +1,28 @@
+div {margin-bottom: 20px}
+
+[readonly] {
+    background: #cccccc;}
+textarea {vertical-align: top;
+width: 500px;
+height: auto;
+resize: none}
+
+input:focus {border: 1px solid red}
+
+.style_radio [type=radio]{display: none}
+.style_radio [type=radio] + label:after {content: '';
+    display: inline-block;
+    height: 15px;
+    width: 40px;
+    background: url("radio-sprite.png") no-repeat -2px -31px;
+    background-size: 200%;
+    margin-top: 2px;
+    vertical-align: top;
+    }
+
+.style_radio [type=radio]:checked + label:after {
+    background-position: -2px -5px;}
+.style_radio [type=radio]:disabled + label:after {
+    background-position: -49px -33px;}
+.style_radio [type=radio]:disabled:checked + label:after {
+    background-position: -49px -5px;}

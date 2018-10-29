@@ -1,0 +1,12 @@
+#r1 {
+    stroke-width: 10px;
+}
+
+#r2 {fill: red}
+
+.logo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url("Burger_King_Logo.svg") no-repeat;
+}

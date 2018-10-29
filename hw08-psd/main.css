@@ -238,6 +238,7 @@ div input {
     background-color: #fff;
     font-size: 18px;
     font-family: ralewaysemibold_italic, sans-serif;
+    outline-style: none;
 }
 
 #butt {
