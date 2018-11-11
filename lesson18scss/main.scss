@@ -1,0 +1,82 @@
+$textColor1: red;
+$f1: 700 20px/2 Lato, sans-serif;
+$b1: 2px solid blue;
+
+@mixin hover($bg) {
+  &:hover {
+    background: darken($bg, 10%);
+  }
+}
+
+@mixin button($btnbg, $w: 200px, $fontSize: 16px ) {
+  width: $w;
+  height: 30px;
+  line-height: 30px;
+  background: $btnbg;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  font-style: $fontSize;
+  @include hover($btnbg)
+}
+
+@mixin clearFix {
+  &:before, &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  @include clearFix;
+  #logo {
+    float: left;
+    font-size: 30px;
+    color: $textColor1;
+  }
+  &-nav {
+    float: right;
+    li {
+      display: inline-block;
+    }
+    a {
+      text-decoration: none;
+      &.active {
+        color: $textColor1;
+        font: $f1;
+      }
+      &.disable {
+        color: #cccccc
+      }
+
+      &:hover {
+        text-decoration: underline;
+        color: $textColor1;
+      }
+    }
+  }
+}
+
+main {
+  @include clearFix;
+  .btn {
+    text-decoration: none;
+  @include button(yellow);
+    &-green {
+      @include button(green);
+    }
+}
+
+form {
+  button {
+    @include button(yellow) ;
+    border: none;
+  }
+}
+
+}

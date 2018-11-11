@@ -1,0 +1,50 @@
+@mixin hover($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 10%)}
+}
+body {
+  margin: 0;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+  background: #acab8a;
+ &__btn {
+   height: 30px;
+   line-height: 30px;
+   padding: 0 15px;
+   @include hover (yellow);
+   border-radius: 5px;
+   margin: 0 10px;
+   display: inline-block;
+   text-decoration: none;
+
+   &--green {
+     @include hover (#2edc0a);}
+   &--main {
+     @include hover (#11720a);
+     font-size: 20px;
+     height: 40px;
+     line-height:40px;
+     padding: 0 20px;
+   }
+ }
+}
+.section {
+  &-1 {
+    padding: 10px 20px;
+    &__title {
+      background: red;
+      text-align: center;
+    }
+&-2 {
+
+}
+  }
+}
+.text {
+  font-size: 20px;
+  letter-spacing: 1px;
+}

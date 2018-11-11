@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'misoregular';
+    src: url('font/miso_webfont.woff2') format('woff2'),
+    url('font/miso_webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.row {
+    background: #fdde7e;
+    display: flex;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px;
+}
+
+.col {
+    width: 30%;
+    min-height: 100px;
+    background: white;
+    margin: 36px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col div {
+    margin-top: 20px;
+    font-family: misoregular, sans-serif;
+}
+
+.col:nth-child(2) div {
+    margin-top: 50px;
+}
+
+[class*=img] {
+    width: 135px;
+    height: 135px;
+    background: url("Gold.jpeg");
+}
+
+.img2 {
+    background-position: 525px 0;
+}
+
+.img3 {
+    background-position: 134px 0;
+}
+
+.price {
+    font-size: 70px;
+    color: #02995b;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 56px;
+    text-align: center;
+    font-weight: 200;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 150px
+}

@@ -1,24 +1,53 @@
-@mixin button {
+@font-face {
+  font-family: 'aleoregular';
+  src: url('fonts/aleo-regular-webfont.woff2') format('woff2'),
+  url('fonts/aleo-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+body {
+  margin: 0;
+  background: #232323;
+  color: #e8e8e8;
+  font: 400 16px 'Josefin Sans', sans-serif;
+  line-height: 2em;
+}
+h2 {font: 400 36px 'aleoregular', sans-serif;}
+h1, h3 {font: 400 20px 'Josefin Sans', sans-serif;
+  text-transform: uppercase;}
+
+@mixin butt {
   width: 150px;
   height: 60px;
   line-height: 60px;
   color: white;
   background: #5474fd;
   text-transform: uppercase;
-  font-size: 14px;
   border: none;
+  font: 400 14px 'aleoregular', sans-serif;
 }
 
-body {
-  margin: 0;
-  background: #353c3d;
-  color: #e8e8e8;
-  font-size: 14px;
-
+@mixin s3s4 {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  div {margin-top: 100px;
+    width: 35%;
+    background: rgba(38, 36, 37, 0.7);
+    align-self: center;}
+  .s3inner {
+    padding: 20px;
+          }
+  button {
+    @include butt;
+    width: 225px;
+  }
 }
 
-@font-face {
-}
+
+
 
 .cls-2 {
   stroke: #f6f7fc;
@@ -26,35 +55,51 @@ body {
   fill: none;
 }
 
-.cls-4 {
-  fill: #5474fd;
-}
-.cls-5 {        fill: #ff6363;
-}
-.cls-6 {
-  fill: #00a2ff;
-}
 .cls-3 {
   fill: #ffffff;
 }
 
+.cls-4 {
+  stroke: #5474fd;
+  stroke-width: 1.5px;
+  fill: none;
+
+}
+
+.cls-5 {
+  fill: #ff6363;
+}
+
+.cls-6 {
+  fill: #00a2ff;
+}
+
+.cls-8 {
+  font-size: 16px;
+}
+
+.cls-9 {
+  fill: #e8e8e8;
+  text-anchor: middle;
+  font-size: 16px;
+  //font-family: "FontAwesome";
+}
 .section-inner {
   padding-top: 50px;
   width: 80vw;
-  height: 100vh;
   text-align: center;
   margin: 0 auto;
 
 }
 
 #s1 {
+  min-height: 100vh;
   background: url("img/Image.jpeg") no-repeat;
   background-size: cover;
   .section-inner {
     padding-top: 200px;
     h1 {
       font-size: 48px;
-      text-transform: uppercase;
       margin: 0;
       letter-spacing: 3px;
     }
@@ -69,9 +114,11 @@ body {
         height: 60px;
         border: none;
         text-align: center;
+        vertical-align: top;
       }
       button {
-        @include button;
+        margin: 0 -4px;
+        @include butt;
         border: 2px solid white;
 
       }
@@ -90,10 +137,10 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    top: 0;
     align-items: center;
     background: #5474fd;
     height: 80px;
+    margin-top: 100px;
     a {
       text-decoration: none;
       color: white;
@@ -104,12 +151,10 @@ body {
       width: 30%;
       a {
         margin-left: 130px;
-        font-size: 24px;
-
+        font: 700 24px 'Josefin Sans', sans-serif;
       }
     }
     .nav {
-      //width: 60%;
       margin-right: 130px;
       a {
         margin-left: 30px;
@@ -121,6 +166,7 @@ body {
 }
 
 #s2 {
+  min-height: 100vh;
   background: url("img/s2main.jpeg") no-repeat;
   background-size: cover;
   .section-inner {
@@ -130,7 +176,7 @@ body {
 
     div {
       width: 45%;
-       align-self: center;
+      align-self: center;
 
       h2 {
         font-size: 36px;
@@ -139,7 +185,7 @@ body {
         font-size: 16px;
       }
       button {
-        @include button;
+        @include butt;
         margin-top: 40px;
       }
       .img1, .img2 {
@@ -160,26 +206,55 @@ body {
   #s2foot {
     width: 100%;
     height: 337px;
-    background: url("img/bgs2.jpeg") no-repeat;
-    background-size:cover;
-    background-position: center;
+    background: url("img/bgs2.jpeg") no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     text-align: center;
     div {
       width: 240px;
       height: 160px;
-      margin: 115px 55px 0 75px;
+      margin: 110px 60px 0 75px;
       svg {
         display: block;
         margin: 0 auto;
-        border: 10px solid #333333;
+        border: 15px solid #333333;
         background: #333333;
-
       }
     }
   }
+}
+
+#s3 {
+  @include s3s4;
+  background: url("img/s3main.jpeg") no-repeat;
 
 }
 
+#s4 {
+  @include s3s4;
+  background: url("img/s4main.jpeg") no-repeat;
+}
 
+#s5 {
+  min-height: 100vh;
+  background: url("img/s5main.jpeg") no-repeat;
+  background-size: cover;
+
+  .s5block {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    div:nth-child(2) {
+      padding: 20px;
+      background: #333333;
+      width: 665px;
+      height: 245px;
+    }
+  }
+}
+
+footer {
+  background: #232323;
+  height: 270px;
+}

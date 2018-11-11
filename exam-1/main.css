@@ -1,19 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+@font-face {
+  font-family: "aleoregular";
+  src: url("fonts/aleo-regular-webfont.woff2") format("woff2"), url("fonts/aleo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   margin: 0;
-  background: #353c3d;
+  background: #232323;
   color: #e8e8e8;
-  font-size: 14px;
+  font: 400 16px "Josefin Sans", sans-serif;
+  line-height: 2em;
 }
 
-@font-face {}
+h2 {
+  font: 400 36px "aleoregular", sans-serif;
+}
+
+h1, h3 {
+  font: 400 20px "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
 .cls-2 {
   stroke: #f6f7fc;
   stroke-width: 2px;
   fill: none;
 }
 
+.cls-3 {
+  fill: #ffffff;
+}
+
 .cls-4 {
-  fill: #5474fd;
+  stroke: #5474fd;
+  stroke-width: 1.5px;
+  fill: none;
 }
 
 .cls-5 {
@@ -24,19 +46,25 @@ body {
   fill: #00a2ff;
 }
 
-.cls-3 {
-  fill: #ffffff;
+.cls-8 {
+  font-size: 16px;
+}
+
+.cls-9 {
+  fill: #e8e8e8;
+  text-anchor: middle;
+  font-size: 16px;
 }
 
 .section-inner {
   padding-top: 50px;
   width: 80vw;
-  height: 100vh;
   text-align: center;
   margin: 0 auto;
 }
 
 #s1 {
+  min-height: 100vh;
   background: url("img/Image.jpeg") no-repeat;
   background-size: cover;
 }
@@ -45,7 +73,6 @@ body {
 }
 #s1 .section-inner h1 {
   font-size: 48px;
-  text-transform: uppercase;
   margin: 0;
   letter-spacing: 3px;
 }
@@ -59,16 +86,18 @@ body {
   height: 60px;
   border: none;
   text-align: center;
+  vertical-align: top;
 }
 #s1 .section-inner form button {
+  margin: 0 -4px;
   width: 150px;
   height: 60px;
   line-height: 60px;
   color: white;
   background: #5474fd;
   text-transform: uppercase;
-  font-size: 14px;
   border: none;
+  font: 400 14px "aleoregular", sans-serif;
   border: 2px solid white;
 }
 #s1 .section-inner #scroll {
@@ -82,10 +111,10 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  top: 0;
   align-items: center;
   background: #5474fd;
   height: 80px;
+  margin-top: 100px;
 }
 #s1 #head-nav a {
   text-decoration: none;
@@ -98,7 +127,7 @@ body {
 }
 #s1 #head-nav .logo a {
   margin-left: 130px;
-  font-size: 24px;
+  font: 700 24px "Josefin Sans", sans-serif;
 }
 #s1 #head-nav .nav {
   margin-right: 130px;
@@ -109,6 +138,7 @@ body {
 }
 
 #s2 {
+  min-height: 100vh;
   background: url("img/s2main.jpeg") no-repeat;
   background-size: cover;
 }
@@ -134,8 +164,8 @@ body {
   color: white;
   background: #5474fd;
   text-transform: uppercase;
-  font-size: 14px;
   border: none;
+  font: 400 14px "aleoregular", sans-serif;
   margin-top: 40px;
 }
 #s2 .section-inner div .img1, #s2 .section-inner div .img2 {
@@ -154,9 +184,8 @@ body {
 #s2 #s2foot {
   width: 100%;
   height: 337px;
-  background: url("img/bgs2.jpeg") no-repeat;
+  background: url("img/bgs2.jpeg") no-repeat center;
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -164,13 +193,91 @@ body {
 #s2 #s2foot div {
   width: 240px;
   height: 160px;
-  margin: 115px 55px 0 75px;
+  margin: 110px 60px 0 75px;
 }
 #s2 #s2foot div svg {
   display: block;
   margin: 0 auto;
-  border: 10px solid #333333;
+  border: 15px solid #333333;
   background: #333333;
+}
+
+#s3 {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background: url("img/s3main.jpeg") no-repeat;
+}
+#s3 div {
+  margin-top: 100px;
+  width: 35%;
+  background: rgba(38, 36, 37, 0.7);
+  align-self: center;
+}
+#s3 .s3inner {
+  padding: 20px;
+}
+#s3 button {
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  background: #5474fd;
+  text-transform: uppercase;
+  border: none;
+  font: 400 14px "aleoregular", sans-serif;
+  width: 225px;
+}
+
+#s4 {
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background: url("img/s4main.jpeg") no-repeat;
+}
+#s4 div {
+  margin-top: 100px;
+  width: 35%;
+  background: rgba(38, 36, 37, 0.7);
+  align-self: center;
+}
+#s4 .s3inner {
+  padding: 20px;
+}
+#s4 button {
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  background: #5474fd;
+  text-transform: uppercase;
+  border: none;
+  font: 400 14px "aleoregular", sans-serif;
+  width: 225px;
+}
+
+#s5 {
+  min-height: 100vh;
+  background: url("img/s5main.jpeg") no-repeat;
+  background-size: cover;
+}
+#s5 .s5block {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+#s5 .s5block div:nth-child(2) {
+  padding: 20px;
+  background: #333333;
+  width: 665px;
+  height: 245px;
+}
+
+footer {
+  background: #232323;
+  height: 270px;
 }
 
 /*# sourceMappingURL=main.css.map */

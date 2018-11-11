@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif
+}
+
+#logo .cls-3 {
+    stroke: #ffffff;
+    stroke-width: 2px;
+    fill: none;
+}
+
+#logo .cls-4 {
+    stroke: #f6f7fc;
+    stroke-width: 2px;
+    fill: none;
+}
+
+#logo .cls-5 {
+    fill: #ffffff;
+}
+
+#scrol .cls-2 {
+    fill: #ffffff;
+}
+
+.section-inner {
+    width: 75vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.s1 {
+    height: 100vh;
+    min-height: 560px;
+    background: #aeb8cd url("img/hero-bg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+
+}
+section {
+    padding: 100px 0;
+}
+section:nth-child(odd) {
+    color: white;
+}
+
+section:nth-child(even) {
+    color: #3c3c3c;
+}
+
+h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.s1 h1 {
+    font-size: 54px;
+}
+
+.s1 p {
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+#logo {
+    margin-top: 285px;
+}
+
+.s1 .scrol {
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    bottom: 115px;
+}
