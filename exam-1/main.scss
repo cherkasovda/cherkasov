@@ -139,7 +139,6 @@ p {
           margin: 0 0 7px 10px
         }
       }
-
     #scr {
       padding: 120px 0;
       p {
@@ -231,12 +230,10 @@ p {
   @include s3s4;
   background: url("img/s3main.jpeg") no-repeat;
 }
-
 #s4 {
   @include s3s4;
   background: url("img/s4main.jpeg") no-repeat;
 }
-
 #s5 {
   min-height: 100vh;
   background: url("img/s5main.jpeg") no-repeat;
@@ -256,7 +253,6 @@ p {
     }
   }
 }
-
 footer {
   padding-top: 100px;
   background: #232323;
