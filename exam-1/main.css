@@ -15,11 +15,24 @@ body {
 
 h2 {
   font: 400 36px "aleoregular", sans-serif;
+  padding-bottom: 20px;
 }
 
 h1, h3 {
-  font: 400 20px "Josefin Sans", sans-serif;
+  font: 700 20px "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font: 400 14px "Josefin Sans", sans-serif;
+}
+
+p {
+  padding: 10px 0;
 }
 
 .cls-2 {
@@ -29,7 +42,7 @@ h1, h3 {
 }
 
 .cls-3 {
-  fill: #ffffff;
+  fill: #e8e8e8;
 }
 
 .cls-4 {
@@ -46,18 +59,7 @@ h1, h3 {
   fill: #00a2ff;
 }
 
-.cls-8 {
-  font-size: 16px;
-}
-
-.cls-9 {
-  fill: #e8e8e8;
-  text-anchor: middle;
-  font-size: 16px;
-}
-
 .section-inner {
-  padding-top: 50px;
   width: 80vw;
   text-align: center;
   margin: 0 auto;
@@ -69,43 +71,60 @@ h1, h3 {
   background-size: cover;
 }
 #s1 .section-inner {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 #s1 .section-inner h1 {
   font-size: 48px;
   margin: 0;
-  letter-spacing: 3px;
 }
 #s1 .section-inner p {
   font-size: 22px;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   margin: 10px 0 50px;
 }
-#s1 .section-inner form input {
+#s1 .section-inner input {
   width: 500px;
   height: 60px;
   border: none;
   text-align: center;
   vertical-align: top;
 }
-#s1 .section-inner form button {
-  margin: 0 -4px;
-  width: 150px;
+#s1 .section-inner input input:focus {
+  background: #acac74;
+}
+#s1 .section-inner button {
+  width: 225px;
   height: 60px;
-  line-height: 60px;
   color: white;
   background: #5474fd;
   text-transform: uppercase;
   border: none;
-  font: 400 14px "aleoregular", sans-serif;
+  font: 400 14px aleoregular, sans-serif;
+  letter-spacing: 2px;
+  width: 150px;
+  margin: 0 -5px;
   border: 2px solid white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
-#s1 .section-inner #scroll {
-  margin-top: 100px;
+#s1 .section-inner button:hover {
+  background: #224bfc;
+  cursor: pointer;
 }
-#s1 .section-inner #scroll p {
+#s1 .section-inner button a {
+  line-height: 60px;
+}
+#s1 .section-inner button svg {
+  margin: 0 0 7px 10px;
+}
+#s1 .section-inner #scr {
+  padding: 120px 0;
+}
+#s1 .section-inner #scr p {
+  text-transform: capitalize;
   font-size: 14px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 #s1 #head-nav {
   display: flex;
@@ -114,12 +133,6 @@ h1, h3 {
   align-items: center;
   background: #5474fd;
   height: 80px;
-  margin-top: 100px;
-}
-#s1 #head-nav a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
 }
 #s1 #head-nav .logo {
   text-align: left;
@@ -134,7 +147,6 @@ h1, h3 {
 }
 #s1 #head-nav .nav a {
   margin-left: 30px;
-  font-size: 14px;
 }
 
 #s2 {
@@ -146,27 +158,29 @@ h1, h3 {
   display: flex;
   justify-content: space-between;
   text-align: left;
+  padding: 120px 0;
 }
 #s2 .section-inner div {
   width: 45%;
   align-self: center;
 }
-#s2 .section-inner div h2 {
-  font-size: 36px;
-}
-#s2 .section-inner div p {
-  font-size: 16px;
-}
 #s2 .section-inner div button {
-  width: 150px;
+  width: 225px;
   height: 60px;
-  line-height: 60px;
   color: white;
   background: #5474fd;
   text-transform: uppercase;
   border: none;
-  font: 400 14px "aleoregular", sans-serif;
+  font: 400 14px aleoregular, sans-serif;
+  letter-spacing: 2px;
   margin-top: 40px;
+}
+#s2 .section-inner div button:hover {
+  background: #224bfc;
+  cursor: pointer;
+}
+#s2 .section-inner div button a {
+  line-height: 60px;
 }
 #s2 .section-inner div .img1, #s2 .section-inner div .img2 {
   width: 360px;
@@ -210,24 +224,30 @@ h1, h3 {
   background: url("img/s3main.jpeg") no-repeat;
 }
 #s3 div {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 35%;
   background: rgba(38, 36, 37, 0.7);
   align-self: center;
 }
 #s3 .s3inner {
-  padding: 20px;
+  padding: 25px;
 }
 #s3 button {
-  width: 150px;
+  width: 225px;
   height: 60px;
-  line-height: 60px;
   color: white;
   background: #5474fd;
   text-transform: uppercase;
   border: none;
-  font: 400 14px "aleoregular", sans-serif;
-  width: 225px;
+  font: 400 14px aleoregular, sans-serif;
+  letter-spacing: 2px;
+}
+#s3 button:hover {
+  background: #224bfc;
+  cursor: pointer;
+}
+#s3 button a {
+  line-height: 60px;
 }
 
 #s4 {
@@ -238,24 +258,30 @@ h1, h3 {
   background: url("img/s4main.jpeg") no-repeat;
 }
 #s4 div {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 35%;
   background: rgba(38, 36, 37, 0.7);
   align-self: center;
 }
 #s4 .s3inner {
-  padding: 20px;
+  padding: 25px;
 }
 #s4 button {
-  width: 150px;
+  width: 225px;
   height: 60px;
-  line-height: 60px;
   color: white;
   background: #5474fd;
   text-transform: uppercase;
   border: none;
-  font: 400 14px "aleoregular", sans-serif;
-  width: 225px;
+  font: 400 14px aleoregular, sans-serif;
+  letter-spacing: 2px;
+}
+#s4 button:hover {
+  background: #224bfc;
+  cursor: pointer;
+}
+#s4 button a {
+  line-height: 60px;
 }
 
 #s5 {
@@ -263,25 +289,32 @@ h1, h3 {
   background: url("img/s5main.jpeg") no-repeat;
   background-size: cover;
 }
+#s5 .section-inner {
+  padding: 100px 0 200px;
+}
 #s5 .s5block {
   display: flex;
   justify-content: center;
   text-align: left;
-}
-#s5 .s5block p:first-letter {
-  font-size: 36px;
-  color: #5474fd;
+  height: 284px;
 }
 #s5 .s5block div:nth-child(2) {
   padding: 20px;
   background: #333333;
   width: 665px;
-  height: 245px;
 }
 
 footer {
+  padding-top: 100px;
   background: #232323;
   height: 270px;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+footer .social div {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
