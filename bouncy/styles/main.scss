@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300,400');
+@import "slick";
+@import "slick-theme";
+
+@mixin img() {
+  height: 364px;
+  width: 285px;
+  float: left;
+  background-size: cover;
+}
+
+@mixin fotoTeam() {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  float: left;
+  margin: 70px;
+}
+
+.cls-4 {
+  fill: #ffffff;
+}
+
+.cls-5 {
+  fill: #3b5998;
+}
+
+.cls-6 {
+  fill: #26a6d1;
+}
+
+.cls-7 {
+  fill: #3f729b;
+}
+
+.cls-8 {
+  fill: #0e76a8;
+}
+
+.cls-9 {
+  fill: #86c9ef;
+}
+
+@mixin dots {
+  .slick-dots li button:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #19bd9a;
+    border-radius: 50%;
+  }
+  .slick-dots li.slick-active button:before {
+    background: #19bd9a;
+  }
+}
+
+body {
+  margin: 0;
+  font: 400 14px 'Open Sans', sans-serif;
+  line-height: 25px;
+  letter-spacing: 0.8px;
+  p {
+    margin: 0 auto;
+    color: #81868e;
+  }
+}
+
+h1, h3, h4 {
+  font: 300 20px 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+h4 {
+  letter-spacing: 1px
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 auto 20px;
+}
+
+a {
+  text-decoration: none;
+  font: 400 16px 'Open Sans', sans-serif;
+  color: white;
+}
+
+.section-inner {
+  width: 85vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#s1 {
+  min-height: 100vh;
+  background: #000;
+  background: url("../images/imgsec1.jpeg");
+  background-size: cover;
+  color: white;
+
+  #head-nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    .logo {
+      text-align: left;
+      width: 10%;
+      a {
+        font: 700 24px 'Open Sans', sans-serif;
+      }
+    }
+    .nav {
+      a {
+        margin-left: 10px;
+        display: inline-block;
+        width: 80px;
+        line-height: 30px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 15px;
+      }
+      a:hover {
+        border: 1px solid white;
+      }
+    }
+  }
+  h1 {
+    padding-top: 180px;
+    font-size: 35px;
+  }
+  p {
+    font-size: 16px;
+    width: 60%;
+  }
+  .scr {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 180px auto 0;
+  }
+  .scr:hover {
+    background: #19bd9a;
+  }
+}
+
+#s2 {
+  min-height: 100vh;
+  color: #464646;
+  background: #f3f3f3;
+  h3 {
+    padding-top: 50px;
+  }
+  p {
+    width: 50%;
+  }
+  .button-group {
+    margin: 50px auto;
+    a {
+      color: #464646;
+      margin-left: 20px;
+    }
+    a:hover {
+      border-bottom: 2px solid #19bd9a;
+    }
+  }
+  .gallery {
+    width: 85vh;
+    height: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    padding-bottom: 50px;
+    div {
+      padding: 1px 5px;
+    }
+  }
+}
+
+#s3 {
+  min-height: 100vh;
+  .section-inner {
+    padding: 50px 0;
+    p {
+      width: 40%;
+    }
+    .slick-slider {
+      width: 80%;
+      padding-top: 50px;
+      margin: 0 auto;
+      .txt {
+        width: 40%;
+        text-align: right;
+        float: right;
+        h2 {
+          margin: 20px 0 5px;
+          text-transform: capitalize;
+        }
+        h3 {
+          font-size: 14px;
+          letter-spacing: 1px;
+        }
+        p {
+          width: 100%;
+        }
+      }
+      .picTeam {
+        @include img;
+        background: url("../images/imgsec3.jpeg") no-repeat;
+      }
+      .picTeam2 {
+        @include img;
+        background: url("../images/images.jpg") no-repeat;
+      }
+      .picTeam3 {
+        @include img;
+        background: url("../images/eduard-bosch-750.jpg") no-repeat;
+      }
+    }
+  }
+  @include dots;
+}
+
+.s4 {
+  height: 200px;
+  background: url("../images/imgs4.jpeg");
+  text-align: center;
+  p {
+    padding: 60px 0 30px;
+    font-size: 20px;
+    color: white;
+  }
+  a {
+    display: inline-block;
+    width: 120px;
+    border: 1px solid white;
+    border-radius: 20px;
+    line-height: 40px;
+  }
+}
+
+#s4 {
+  background: #f3f3f3;
+  min-height: 100vh;
+  h3 {
+    padding-top: 50px;
+  }
+  .txtH {
+    width: 50%;
+    padding-bottom: 40px;
+  }
+  .slick-slider {
+    min-height: 315px;
+    background: white;
+
+    .txt {
+      margin: 50px;
+      text-align: left;
+      h5 {
+        color: #19bd9a;
+        font: 700 16px 'Open Sans', sans-serif;
+        margin: 15px 0 5px;
+      }
+      h4 {
+        font: 400 14px 'Open Sans', sans-serif;
+      }
+    }
+    .pics41 {
+      @include fotoTeam;
+      background: url("../images/pics41.jpeg") no-repeat;
+    }
+    .pics42 {
+      @include fotoTeam;
+      background: url("../images/people-2442565_640.jpg") no-repeat;
+    }
+    .pics43 {
+      @include fotoTeam;
+      background: url("../images/man-869215_640.jpg") no-repeat;
+    }
+  }
+  @include dots;
+  .slick-dots {
+    bottom: 20px;
+  }
+}
+#s5 {
+  min-height: 100vh;
+  h3 {
+    padding-top: 50px;
+  }
+  p {
+    width: 40%;
+    padding-bottom: 50px;
+  }
+  h4 {
+    padding-top: 50px;
+    font: 700 24px 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+  }
+  #map {
+    width: 100%;
+    height: 500px
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    div {
+      margin: 10px;
+    }
+  }
+}
