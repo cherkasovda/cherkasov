@@ -1,0 +1,32 @@
+@import "slick";
+@import "slick-theme";
+
+
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+
+    img {
+      height: 300px;
+    }
+  }
+
+.slick-prev:before, .slick-next:before {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.slick-prev:before{
+  background: url("../images/prev1.png") no-repeat;
+  background-size: cover;
+}
+.slick-next:before{
+  background: url("../images/next.png") no-repeat;
+  background-size: cover;
+}
+.slick-prev{
+  left: -80px;
+}

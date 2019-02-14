@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/css.css">
+</head>
+<body>
+<h1>Isotope - filtering</h1>
+
+<div class="button-group filters-button-group">
+    <button class="button is-checked" data-filter="*">show all</button>
+    <button class="button" data-filter=".metal">metal</button>
+    <button class="button" data-filter=".transition">transition</button>
+    <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
+    <button class="button" data-filter=":not(.transition)">not transition</button>
+    <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
+    <button class="button" data-filter="numberGreaterThan50">number > 50</button>
+    <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+    <button class="button" data-filter="ao">symbol first A-J</button>
+    <button class="button" data-filter="s1">One symbol</button>
+
+</div>
+
+<div class="grid">
+    <div class="element-item transition metal " data-category="transition">
+
+    </div>
+    <div class="element-item metalloid " data-category="metalloid">
+
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+
+    </div>
+    <div class="element-item alkali metal " data-category="alkali">
+
+    </div>
+    <div class="element-item alkali metal " data-category="alkali">
+
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+
+    </div>
+    <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
+
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+
+    </div>
+    <div class="element-item post-transition metal " data-category="post-transition">
+
+    </div>
+    <div class="element-item metalloid " data-category="metalloid">
+
+    </div>
+    <div class="element-item transition metal " data-category="transition">
+
+    </div>
+    <div class="element-item lanthanoid metal inner-transition " data-category="lanthanoid">
+
+    </div>
+    <div class="element-item noble-gas nonmetal " data-category="noble-gas">
+
+    </div>
+    <div class="element-item diatomic nonmetal " data-category="diatomic">
+
+    </div>
+    <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+
+    </div>
+    <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.js" defer></script>
+<script src="js/isotope.pkgd.js" defer></script>
+<script src="../lesson-09-filter/js/main.js" defer></script>
+
+</body>
+</html>

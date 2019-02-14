@@ -245,6 +245,10 @@
   opacity: 0.75;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .cls-4 {
   fill: #ffffff;
 }
@@ -284,6 +288,10 @@ h1, h3, h4 {
   font: 300 20px "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   letter-spacing: 7px;
+}
+
+h3 {
+  padding-top: 50px;
 }
 
 h4 {
@@ -362,9 +370,6 @@ a {
   color: #464646;
   background: #f3f3f3;
 }
-#s2 h3 {
-  padding-top: 50px;
-}
 #s2 p {
   width: 50%;
 }
@@ -378,16 +383,22 @@ a {
 #s2 .button-group a:hover {
   border-bottom: 2px solid #19bd9a;
 }
-#s2 .gallery {
-  width: 85vh;
-  height: 1000px;
-  display: flex;
+#s2 .popup-gallery {
+  width: 80vh;
+  height: 1200px;
+  /*display: flex;
   justify-content: flex-start;
-  flex-flow: column wrap;
+  flex-flow: column wrap;*/
   padding-bottom: 50px;
+  /*div {
+    padding: 1px 5px;
+  }*/
 }
-#s2 .gallery div {
-  padding: 1px 5px;
+#s2 .popup-gallery .element-item {
+  width: 272px;
+  min-height: 150px;
+  float: left;
+  padding: 2px 2px;
 }
 
 #s3 {
@@ -395,9 +406,9 @@ a {
 }
 #s3 .section-inner {
   padding: 50px 0;
-}
-#s3 .section-inner p {
-  width: 40%;
+  /* p {
+     width: 40%;
+   }*/
 }
 #s3 .section-inner .slick-slider {
   width: 80%;
@@ -405,15 +416,14 @@ a {
   margin: 0 auto;
 }
 #s3 .section-inner .slick-slider .txt {
-  width: 40%;
   text-align: right;
-  float: right;
 }
 #s3 .section-inner .slick-slider .txt h2 {
   margin: 20px 0 5px;
   text-transform: capitalize;
 }
 #s3 .section-inner .slick-slider .txt h3 {
+  padding-top: 10px;
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -425,6 +435,7 @@ a {
   width: 285px;
   float: left;
   background-size: cover;
+  margin-right: 50px;
   background: url("../images/imgsec3.jpeg") no-repeat;
 }
 #s3 .section-inner .slick-slider .picTeam2 {
@@ -432,6 +443,7 @@ a {
   width: 285px;
   float: left;
   background-size: cover;
+  margin-right: 50px;
   background: url("../images/images.jpg") no-repeat;
 }
 #s3 .section-inner .slick-slider .picTeam3 {
@@ -439,6 +451,7 @@ a {
   width: 285px;
   float: left;
   background-size: cover;
+  margin-right: 50px;
   background: url("../images/eduard-bosch-750.jpg") no-repeat;
 }
 #s3 .slick-dots li button:before {
@@ -474,9 +487,6 @@ a {
 #s4 {
   background: #f3f3f3;
   min-height: 100vh;
-}
-#s4 h3 {
-  padding-top: 50px;
 }
 #s4 .txtH {
   width: 50%;
@@ -539,9 +549,6 @@ a {
 
 #s5 {
   min-height: 100vh;
-}
-#s5 h3 {
-  padding-top: 50px;
 }
 #s5 p {
   width: 40%;

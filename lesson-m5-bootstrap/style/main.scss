@@ -1,0 +1,11 @@
+@import "bootstrap/bootstrap-reboot";
+@import "bootstrap/bootstrap";
+@import "bootstrap/bootstrap-grid";
+.container {
+  background: #acab8a;
+}
+.container-fluid-md {
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
+}

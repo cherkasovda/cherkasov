@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/magnificpopup.css">
 </head>
 <body>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
@@ -70,51 +71,53 @@
 
         <h3>THE PORTFOLIO</h3>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+      <div class="filters">
         <div class="button-group" data-filter-group="works">
-            <a href="javascript:void(0);" class="button is-checked" data-filter="">All Works</a>
+            <a href="javascript:void(0);" class="button is-checked" data-filter="*">All Works</a>
             <a href="javascript:void(0);" class="button" data-filter=".print">Print</a>
             <a href="javascript:void(0);" class="button" data-filter=".brand">Brand</a>
             <a href="javascript:void(0);" class="button" data-filter=".web">Web</a>
             <a href="javascript:void(0);" class="button" data-filter=".html">HTML</a>
         </div>
+      </div>
+        <div class="popup-gallery">
+            <!--<div class="element-item print" data-category="print">-->
 
-        <div class="gallery">
-            <div class="works print">
-                <img src="images/1.jpeg" alt="print">
-            </div>
-            <div class="works brand">
-                <img src="images/5.jpeg" alt="branding">
-            </div>
-            <div class="works web">
-                <img src="images/9.jpeg" alt="web">
-            </div>
-            <div class="works html">
-                <img src="images/2.jpeg" alt="html">
-            </div>
-            <div class="works print">
-                <img src="images/6.jpeg" alt="print">
-            </div>
-            <div class="works brand">
-                <img src="images/10.jpeg" alt="branding">
-            </div>
-            <div class="works web">
-                <img src="images/3.jpeg" alt="web">
-            </div>
-            <div class="works html">
-                <img src="images/7.jpeg" alt="html">
-            </div>
-            <div class="works print">
-                <img src="images/11.jpeg" alt="print">
-            </div>
-            <div class="works brand">
-                <img src="images/4.jpeg" alt="branding">
-            </div>
-            <div class="works web">
-                <img src="images/8.jpeg" alt=web">
-            </div>
-            <div class="works html">
-                <img src="images/12.jpeg" alt="html">
-            </div>
+                <a href="images/1.jpeg"><img src="images/1.jpeg" class="element-item print" data-category="print"  alt="print"></a>
+            <!--</div>
+            <div class="element-item brand" data-category="brand">-->
+                <a href="images/5.jpeg"><img src="images/5.jpeg" class="element-item brand" data-category="brand" alt="branding"></a>
+            <!--</div>
+            <div class="element-item web" data-category="web">-->
+                <a href="images/9.jpeg"><img src="images/9.jpeg" class="element-item web" data-category="web" alt="web"></a>
+            <!--</div>-->
+            <!--<div class="element-item html" data-category="html">-->
+                <a href="images/2.jpeg"><img src="images/2.jpeg"  class="element-item html" data-category="html" alt="html"></a>
+           <!-- </div>
+            <div class="element-item print" data-category="print">-->
+                <a href="images/6.jpeg"><img src="images/6.jpeg" class="element-item print" data-category="print" alt="print"></a>
+           <!-- </div>
+            <div class="element-item brand" data-category="brand">-->
+                <a href="images/10.jpeg"><img src="images/10.jpeg"  class="element-item web" data-category="web" alt="branding"></a>
+            <!--</div>
+            <div class="element-item web" data-category="web">-->
+                <a href="images/3.jpeg"><img src="images/3.jpeg" class="element-item web" data-category="web" alt="web"></a>
+           <!-- </div>
+            <div class="element-item html" data-category="html">-->
+                <a href="images/7.jpeg"><img src="images/7.jpeg"  class="element-item html" data-category="html" alt="html"></a>
+            <!--</div>
+            <div class="element-item print" data-category="print">-->
+                <a href="images/11.jpeg"><img src="images/11.jpeg" class="element-item print" data-category="print" alt="print"></a>
+           <!-- </div>
+            <div class="element-item brand" data-category="brand">-->
+                <a href="images/4.jpeg"><img src="images/4.jpeg"  class="element-item brand" data-category="brand" alt="branding"></a>
+            <!--</div>
+            <div class="element-item web" data-category="web">-->
+                <a href="images/8.jpeg"><img src="images/8.jpeg" class="element-item web" data-category="web" alt=web"></a>
+            <!--</div>
+            <div class="element-item html" data-category="html">-->
+                <a href="images/12.jpeg"><img src="images/12.jpeg" class="element-item html" data-category="html" alt="html"></a>
+            <!--</div>-->
         </div>
     </div>
 
@@ -268,12 +271,27 @@
         </div>
     </div>
 </section>
+<!--<div class="popup-gallery">
+    <a href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg" title="Очиститель"><img src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg" width="75" height="75"></a>
+    <a href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg" title="Зимний танец"><img src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg" width="75" height="75"></a>
+    <a href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg" title="Незваный гость"><img src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg" width="75" height="75"></a>
+    <a href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg" title="О нет, не снова!"><img src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg" width="75" height="75"></a>
+    <a href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg" title="Лебединое озеро"><img src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg" width="75" height="75"></a>
+    <a href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg" title="Shake"><img src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg" width="75" height="75"></a>
+    <a href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg" title="Кто это, мамочка?"><img src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg" width="75" height="75"></a>
+</div>-->
 <script src="js/jquery-3.3.1.js" defer></script>
 <script src="js/slick.js" defer></script>
-<!--<script src="js/isotope.pkgd.js" defer></script>-->
+<script src="js/isotope.pkgd.js" defer></script>
+<script src="js/fit-columns.js" defer></script>
+<script src="js/jquery.magnificpopup.js" defer></script>
+
 <script src="js/main.js" defer></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8Pqp5jIVZ90oUj6P6zZmx7JrsLEmjayY&callback=initMap"
         defer></script>
+
+
+</div>
 
 </body>
 </html>

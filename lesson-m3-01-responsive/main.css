@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 640px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+}
+.wrapper div {
+  width: 200px;
+  margin: 10px;
+  min-height: 400px;
+  background: #8f8f8f;
+  padding: 10px;
+  box-sizing: border-box;
+  word-break: break-all;
+}
+@media (max-width: 640px) {
+  .wrapper div {
+    width: calc(50% - 20px);
+    min-width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .wrapper div {
+    width: 100%;
+    margin: 10px 0;
+    min-width: 200px;
+    min-height: initial;
+  }
+}
+@media (max-width: 480px) and (min-width: 300px) {
+  .wrapper div {
+    background: #ff1715;
+  }
+}
+@media (-webkit-device-pixel-ratio: 2) {
+  .wrapper div {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

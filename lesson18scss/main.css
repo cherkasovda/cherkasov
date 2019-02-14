@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.header:before, .header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header #logo {
+  float: left;
+  font-size: 30px;
+  color: red;
+}
+.header-nav {
+  float: right;
+}
+.header-nav li {
+  display: inline-block;
+}
+.header-nav a {
+  text-decoration: none;
+}
+.header-nav a.active {
+  color: red;
+  font: 700 20px/2 Lato, sans-serif;
+}
+.header-nav a.disable {
+  color: #cccccc;
+}
+.header-nav a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+main:before, main:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+main .btn {
+  text-decoration: none;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: yellow;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  font-style: 16px;
+}
+main .btn:hover {
+  background: #cccc00;
+}
+main .btn-green {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: green;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  font-style: 16px;
+}
+main .btn-green:hover {
+  background: #004d00;
+}
+main form button {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  background: yellow;
+  text-align: center;
+  display: block;
+  margin: 5px;
+  font-style: 16px;
+  border: none;
+}
+main form button:hover {
+  background: #cccc00;
+}
+
+/*# sourceMappingURL=main.css.map */

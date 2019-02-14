@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+  background: #acab8a;
+}
+.main__btn {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  background: yellow;
+  border-radius: 5px;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.main__btn:hover {
+  background: #cccc00;
+}
+.main__btn--green {
+  background: #2edc0a;
+}
+.main__btn--green:hover {
+  background: #24ab08;
+}
+.main__btn--main {
+  background: #11720a;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+}
+.main__btn--main:hover {
+  background: #0a4306;
+}
+
+.section-1 {
+  padding: 10px 20px;
+}
+.section-1__title {
+  background: red;
+  text-align: center;
+}
+.text {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=main.css.map */

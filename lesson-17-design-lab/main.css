@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+}
+
+/* .cls-3 {
+  stroke: #ffffff;
+  stroke-width: 2px;
+  fill: none;
+}
+ .cls-4 {
+  stroke: #ffffff;
+  stroke-width: 2px;
+  fill: none;
+}
+ .cls-5 {
+  fill: #ffffff;
+}*/
+.cls-8 {
+  stroke: #ffffff;
+  stroke-width: 2px;
+  fill: none;
+}
+
+#scroll .cls-2 {
+  fill: #ffffff;
+}
+
+#s4img1.cls-2, #s4img2.cls-2, #s4img3.cls-2 {
+  fill: #3c3c3c;
+}
+
+.section-inner {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+section:not(.s1) .section-inner {
+  border: 2px solid #3c3c3c;
+  border-top: none;
+  padding: 72px 182px 0;
+}
+
+.section-inner p {
+  margin-bottom: 28px;
+  line-height: 26px;
+}
+
+section {
+  padding: 100px 0;
+}
+
+section:nth-child(odd) {
+  color: #ffffff;
+}
+
+section:nth-child(even) {
+  color: #3c3c3c;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.s1 {
+  height: 100vh;
+  min-height: 680px;
+  position: relative;
+  background: #a9b5c8 url("img/hero-bg.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.s1 h1 {
+  font-size: 54px;
+}
+
+.s1 p {
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.s1 .scroll {
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  bottom: 0;
+}
+
+section:nth-child(odd):not(.s1) .section-inner {
+  border-color: #ffffff;
+}
+
+h2 {
+  font: 700 34px Lato, sans-serif;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: -20px;
+  left: 0;
+  width: calc(100% + 2px);
+  margin: 0 -1px;
+}
+
+h2:before, h2:after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background: #3c3c3c;
+}
+
+section:nth-child(odd) h2:before, section:nth-child(odd) h2:after {
+  background: #ffffff;
+}
+
+#s3 {
+  background: url("img/services.jpeg");
+  background-size: cover;
+}
+#s3 .section-inner {
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+#s4 .section-inner > div {
+  margin: 50px 0;
+}
+#s4 .section-inner p {
+  font-size: 14px;
+}
+#s4 .section-inner h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.s5 .row {
+  display: flex;
+  align-items: center;
+}
+.s5 .col {
+  position: relative;
+}
+.s5 .col:nth-child(2) {
+  margin: 5px 10px;
+}
+.s5 img {
+  width: 100%;
+  min-height: 12.5vw;
+}
+.s5 span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #ffffff;
+}
+
+#s6 .btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  width: 395px;
+  height: 58px;
+  line-height: 58px;
+  margin: 10px 0 55px;
+  background: #3c3c3c;
+}
+#s6 .btn:hover {
+  background: #626262;
+}
+
+footer {
+  text-align: center;
+  vertical-align: middle;
+}
+footer #logo-svg .cls-5 {
+  fill: #acab8a;
+}
+footer .cls-9 {
+  stroke: #acac74;
+  stroke-width: 2px;
+  fill: none;
+}
+
+/*.s5 .col:nth-child(2) {*/
+/*flex-grow:2;*/
+/*}*/
+
+/*# sourceMappingURL=main.css.map */

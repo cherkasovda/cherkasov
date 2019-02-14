@@ -1,0 +1,15 @@
+body {
+  min-height: 3000px;
+}
+div {
+  background-color: #ff1715;
+  width:200px;
+  height: 200px;
+  margin: 50px;
+  &.animated {
+    background-color: #0b15ff;
+    transition: 2000ms;
+  }
+}
+a {
+  display: block;}

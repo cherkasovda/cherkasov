@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="13" height="10" viewBox="0 0 13 10">
+  <defs>
+    <style>
+
+      .cls-2 {
+        font-size: 14px;
+      }
+
+      .cls-3 {
+        fill: #cccccc;
+        text-anchor: middle;
+        font-size: 14px;
+        font-family: "FontAwesome";
+      }
+    </style>
+  </defs>
+  <text class="cls-2" x="6px" y="10px"><tspan dy="NaNem" x="50%" class="cls-3"></tspan></text>
+</svg>
