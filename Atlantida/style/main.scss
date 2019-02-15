@@ -622,9 +622,9 @@ body {
   min-height: 100vh;
   color: #f1f0c8;
   background: #ededed;
-  background: url("../img/Steampunk_Clock_Gear_Template_greeting_card_558773_1280x904.jpg");
+  background: url("../img/Steampunk_Clock_Gear_Template_greeting_card_558773_1280x904.jpg") no-repeat;
+  background-size: cover;
   .section-inner {
-       //background: #ededed;
   }
   .ch-boxCenter {
     position: relative;

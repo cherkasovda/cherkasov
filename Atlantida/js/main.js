@@ -14,10 +14,6 @@
 
     });
     window.onload = function () {
-
-
-// init Isotope
-
         var $grid = $('.popup-gallery').isotope({
             itemSelector: '.element-item',
             percentPosition: true,
@@ -38,8 +34,7 @@
                 $(this).addClass('is-checked');
             });
         });
-
-    }
+    };
 
 
     window.addEventListener('load', function () {
@@ -73,7 +68,6 @@
         body.animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 500);
-
         return false;
     });
 /*    var scrolled = $(window).scrollTop()
