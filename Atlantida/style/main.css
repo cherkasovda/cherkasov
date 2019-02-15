@@ -4858,6 +4858,7 @@ body .section-inner p {
 }
 
 #history {
+  min-height: 100vh;
   color: #f1f0c8;
   background: #ededed;
   background: url("../img/Steampunk_Clock_Gear_Template_greeting_card_558773_1280x904.jpg");
@@ -5380,6 +5381,9 @@ body .section-inner p {
     width: 100%;
   }
 
+  #history .ch-boxCenter .btn {
+    color: white;
+  }
   #history .ch-wrapper-left, #history .ch-wrapper-right {
     float: none;
   }
