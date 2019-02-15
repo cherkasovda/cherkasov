@@ -70,63 +70,8 @@
         }, 500);
         return false;
     });
-/*    var scrolled = $(window).scrollTop()
-    $('.parallax').each(function(index) {
-        var imageSrc = $(this).data('image-src')
-        var imageHeight = $(this).data('height')
-        $(this).css('background-image','url(' + imageSrc + ')')
-        $(this).css('height', imageHeight);
 
-        var initY = $(this).offset().top,
-         height = $(this).height(),
-         diff = scrolled - initY,
-         ratio = Math.round((diff / height) * 100);
-        $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
-    });
-    function isInViewport(node) {
-        var rect = node.getBoundingClientRect()
-        return (
-            (rect.height > 0 || rect.width > 0) &&
-            rect.bottom >= 0 &&
-            rect.right >= 0 &&
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-        )
-    };
-    $(window).scroll(function() {
-        var scrolled = $(window).scrollTop()
-        $('.parallax').each(function(index, element) {
-            var initY = $(this).offset().top
-            var height = $(this).height()
-            var endY = initY + $(this).height()
 
-            var visible = isInViewport(this)
-            if(visible) {
-                var diff = scrolled - initY
-                var ratio = Math.round((diff / height) * 100)
-                $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
-            }
-        })
-    })*/
-    /*  $(function () {
-          $(document).ready(function () {
-              $('.popup-gallery').magnificPopup({
-                  delegate: 'a',
-                  type: 'image',
-                  tLoading: 'Loading image #%curr%...',
-                  mainClass: 'mfp-img-mobile',
-                  gallery: {
-                      enabled: true,
-                      navigateByImgClick: true,
-                      preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-                  },
-                  image: {
-                      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-
-                  }
-              });
-          });
-      });*/
 })(jQuery);
 
 var map,

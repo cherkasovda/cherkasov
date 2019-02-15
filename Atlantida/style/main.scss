@@ -484,14 +484,6 @@ body {
 .nav-link {
   padding-right: 3px;
 }
-/*.parallax {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}*/
 #about {
       .ch-box-about {
       background: white;
@@ -622,7 +614,7 @@ body {
   min-height: 100vh;
   color: #f1f0c8;
   background: #ededed;
-  background: url("../img/Steampunk_Clock_Gear_Template_greeting_card_558773_1280x904.jpg") no-repeat;
+  background: url("../img/Steampunk_Clock_Gear_Template_greeting_card_558773_1280x904.jpg") round;
   background-size: cover;
   .section-inner {
   }
@@ -659,6 +651,7 @@ body {
 #ourTeam {
   min-height: 700px;
   background: url("../img/Images5.jpeg") no-repeat;
+  background-size: cover;
   .section-inner {
     padding-bottom: 0;
   }
@@ -985,7 +978,7 @@ body {
         display: flex;
         justify-content: center;
         margin-bottom: 30px;
-        &:hover {
+               &:hover {
           .front {
             transform: none;
           }
@@ -1002,6 +995,7 @@ body {
       .front, .back {
         position: unset;
         transform: none;
+        width: 40%;
       }
 
     }
@@ -1060,8 +1054,16 @@ body {
       }
     }
   }
+  #ourTeam {
+    .wrapper3d {
+      .imgTeam {
+        .back, .front {
+          width: 50%;
+        }
+      }
+    }
+  }
 }
-
 @media screen and (max-width: 576px) {
   #contact {
     .ch-form {
